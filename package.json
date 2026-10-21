@@ -1,6 +1,6 @@
 {
-  "name": "react-task-tracker",
-  "version": "0.1.0",
+  "name": "project",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -15,11 +15,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "eslintConfig": {
     "extends": [
